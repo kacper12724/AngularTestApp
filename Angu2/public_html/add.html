@@ -1,0 +1,13 @@
+{{message}}
+<br/>
+<div class="alert alert-success" ng-show="added">
+    Nowy kontakt zostal‚ pomys›lnie dodany.
+</div>
+<br/>
+<form class="form-horizontal" ng-submit="submit()">
+    <input type="text" id="name" class="form-control" ng-model="contact.name">
+    <input type="text" id="phone" class="form-control" ng-model="contact.phone">
+    <div class="col-sm-offset-2 col-sm-10">
+        <input type="submit" class="btn btn-primary" value="Add Contact">
+    </div>
+<form/>

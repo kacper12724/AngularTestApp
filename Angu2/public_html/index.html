@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl" ng-app="contactsMgr" ng-controller="appCtrl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="angular-route.min.js"></script>
+        <script type="text/javascript" src="angular-resource.min.js"></script>
+        <script type="text/javascript" src="controller.js"></script>
+    </head>
+    <body>
+        JESTESMY W INDEX
+        <br/>
+    <li ng-class="pageClass('#!')"> <a href="#!">Main</a></li>
+    <li ng-class="pageClass('#add-contact')"> <a href="#add-contact">Add</a></li>
+    <a href="#contact">ContactNSFW</a><br/>
+    {{wiad}}
+    ENDOF INDEX <br/>
+    <form>
+        <input type="text" placeholder="Search" ng-model="search.name" ng-keyup="startSearch()">
+    </form>
+    <br/>
+    ponizej wyswietlanie
+    <br/>
+    <ng-view></ng-view>
+    <br/>
+    powyzej wyswietlanie
+</body>
+</html>

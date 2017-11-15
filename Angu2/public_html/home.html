@@ -1,0 +1,18 @@
+
+<br/>JESTESMY W HOME
+<br/>
+<a href="#!">Main</a>
+<a href="#add-contact">Add</a>
+<br/>
+
+{{message}}<br/>
+<table>
+    <tr ng-repeat="contact in contacts | filter:search">
+        <td>{{contact.name}}</td>
+        <td>{{contact.phone}}</td>
+        <td>
+            <a href="#contact/{{$index}}">Wyswietl</a>
+            <button class="btn btn-danger btn-xs" ng-click="delete($index)">UsuĹ„</button>
+        </td>
+    </tr>
+</table>
